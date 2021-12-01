@@ -1,0 +1,7 @@
+.option {
+    color: rgb(81, 88, 92);
+}
+.option:hover {
+    cursor: pointer;
+}
+

@@ -1,0 +1,20 @@
+.app {
+    display: flex;
+    color: rgb(74, 74, 74)
+}
+
+.app_left {
+    width: 30%;
+    min-width: 300px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.app_left, .app_right {
+    height: 100vh;
+}
+
+.app_right {
+    width: 70%;
+}

@@ -1,0 +1,33 @@
+.search {
+    padding: 10px;
+    background-color: rgb(246, 246, 246);
+}
+
+.search > form {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px 0;
+}
+
+.search > form > input {
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-left: 20px;
+    background-color: unset;
+    font-size: 14px;
+}
+
+.searchIcon {
+    margin-left: 20px;
+}
+
+.searchIcon.selected {
+    color: rgb(51, 183, 246);
+    animation-name: smooth;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+

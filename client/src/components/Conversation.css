@@ -1,0 +1,82 @@
+.conversation {
+    height: 100%;
+}
+
+.conversation_header {
+    background-color: var(--headerBackgroundColor);
+    min-height: var(--headerHeight);
+    border-left: 1px solid rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conversation_header_left {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.conversation_header_right {
+    display: flex;
+    padding-right: 20px;
+}
+
+.conversation_header_left > span {
+    padding-left: 15px;
+    color: black;
+}
+
+.conversation_body {
+    background-image: url('https://cdn.wallpapersafari.com/61/64/3QBHDv.png');
+    height: calc(100% - calc(2 * var(--headerHeight)));
+    padding-left: max(10px, 10%);
+    padding-right: max(10px, 10%);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.conversation_header_right > .option {
+    margin-left: 20px;
+}
+
+.messageWrap:first-child {
+    margin-bottom: 10px
+}
+
+.conversation_footer {
+    background-color: var(--headerBackgroundColor);
+    height: var(--headerHeight);
+    border-left: 1px solid rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.conversation_footer > form {
+    width: 100%;
+}
+
+.conversation_footer > form > input {
+    width: calc(100%);
+    display: block;
+    border: none;
+    outline: none;
+    border-radius: 60px;
+    padding: 13px 0 13px 20px;
+    resize: none;
+}
+
+.conversation_footer > .option {
+    margin-right: 10px;
+}
+
+.conversation_footer > .option:last-child {
+    margin-left: 40px;
+}
+
+.conversation_footer > .option > svg {
+    width: 26px;
+    height: 26px;
+}
