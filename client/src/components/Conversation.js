@@ -19,11 +19,11 @@ function Conversation(props) {
         if (props.selectedMessage?.messages) {
             return props.selectedMessage.messages.slice().reverse().map((message, index) => {
                 return message.fromOwner ?
-                    <div className="messageWrap" key={index}>
-                        <OwnerMessage {...message}  />
+                    <div className="messageWrap" key={message.id}>
+                        <OwnerMessage messageId={props.selectedMessage.id} {...message}  />
                     </div> :
-                    <div className="messageWrap" key={index}>
-                        <FriendMessage {...message} />
+                    <div className="messageWrap" key={message.id}>
+                        <FriendMessage messageId={props.selectedMessage.id} {...message} />
                     </div>
             })
         }

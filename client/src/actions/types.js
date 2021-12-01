@@ -1,4 +1,5 @@
 export const LOAD_MESSAGE = 'LOAD_MESSAGE'
 export const SEND_MESSAGE = 'SEND_MESSAGE'
 export const SET_MESSAGES = 'SET_MESSAGES'
+export const DELETE_TEXT = 'DELETE_TEXT'
 

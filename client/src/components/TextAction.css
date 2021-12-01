@@ -1,0 +1,22 @@
+.textActions {
+    position: absolute;
+    background-color: white;
+    top: -210px;
+    right: 0;
+    padding: 10px 0;
+    z-index: 1;
+    min-width: 200px;
+}
+
+.textActions > span {
+    display: block;
+    color: grey;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.textActions > span:hover {
+    background-color: rgb(246, 246, 246);
+}

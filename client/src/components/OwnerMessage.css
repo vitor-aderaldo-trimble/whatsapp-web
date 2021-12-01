@@ -17,6 +17,14 @@
     text-align: right;
 }
 
+.ownerMessage > .textActions {
+    display: none;
+}
+
+.ownerMessage.active > .textActions {
+    display: block;
+}
+
 .ownerMessage > .ownerText > span {
     width: 100%;
 }
@@ -51,6 +59,6 @@
     cursor: pointer;
 }
 
-.ownerMessage:hover > .ownerText > .messageOption  {
+.ownerMessage:hover > .ownerText > .messageOption, .ownerMessage.active > .ownerText > .messageOption  {
     display: block;
 }

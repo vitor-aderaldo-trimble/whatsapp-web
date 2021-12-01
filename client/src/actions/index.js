@@ -46,3 +46,15 @@ export const sendMessage = (text) => {
     }
 
 }
+
+export const deleteText = (messageId, textId) => {
+    return async(dispatch, getState) => {
+        const messages = getState().selectedMessage.selectedMessage.messages
+        const newMessages = messages.filter(text => text.id != textId)
+        const response = await whatsApi.patch(`messages/${messageId}`, {messages: newMessages})
+        dispatch({
+            type: SET_MESSAGES,
+            payload: response.data.messages
+        })
+    }
+}
